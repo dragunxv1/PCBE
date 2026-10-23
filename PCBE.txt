@@ -1,0 +1,48 @@
+Bursa
+
+Simultati sau implementati o bursa unde se tranzactioneaza actiuni. Actiunile sint ale diverselor companii listate la bursa. 
+Tranzactiile se efectueaza de catre cumparatori si respectiv vinzatori de actiuni, in felul urmator:
+- vinzatorii pun in vinzare un numar de actiuni si cer un anumit pret per actiune
+- cumparatorii isi arata intentia de a cumpara un numar de actiuni, la un anumit pret
+- atunci cind o oferta cu o cerere corespund ca pret, se tranzactioneaza un numar de actiuni n =  min (oferta, cerere)
+- toata lumea are acces la informatiile legate de oferte si cereri, cit si la istoria tranzactiilor 
+- cererile si ofertele pot fi modificate oricind, daca nu exista o tranzactie in desfasurare pe actiunile in cauza
+Prin implementare se va intelege un sistem distribuit (server si clienti) in care clientii sint vinzatorii si cumparatorii. 
+Prin simulare se va intelege un program in care vinzatorii si cumparatorii sint simulati prin fire de executie ce vor 
+functiona pe baza unor algoritmi ce tin cont de informatiile comune (cereri si oferte , lista tranzactiilor efectuate).
+
+
+
+Coordonator de sistem birocratic
+
+Un sistem software capabil sa indrume si sa ajute clientii sa treaca
+prin intortocheatele proceduri ale unui sistem birocratic clasic. Prin
+elemente de configurare, se specifica existenta unui numar arbitrar de
+birouri si un numar oarecare de documente ce pot fi cerute de catre
+clienti. Nici un document nu poate fi obtinut direct; pentru a il
+primi, clientul trebuie sa obtina un numar de documente intermediare.
+La birouri sunt cozi, iar unele birouri au mai mult de un ghiseu care
+lucreaza cu publicul. Poate sa apara situatia ca oricare din ghisee sa
+fie temporar inchise, la momente neprevazute, din cauza pauzei de
+cafea. Aplicatia trebuie sa simuleze tot sistemul, bazandu-se pe o
+informatie de configurare care contine cel putin urmatoarele elemente:
+
+- birourile si actele pe care le pot emite
+- dependentele intre acte (de ce acte e nevoie pentru a primi un alt
+act) 
+
+Clientii vor fi simulati prin fire de executie.
+
+
+
+Jocul vietii
+
+Simulati o populatie de celule vii ce au fiecare ca scop hranirea si inmultirea.
+
+Exista un numar limitat de unitati de hrana (resurse) pe care celulele le consuma. O unitate de hrana ii ajunge unei celule un timp dat T_full dupa care i se face foame. Daca nu maninca un alt timp dat T_starve, celula moare rezultind un numar aleator intre 1 si 5 de unitati de hrana.
+
+Dupa ce a mincat de minim 10 ori, o celula se va inmulti inainte sa i se faca din nou foame. Exista doua tipuri de celule: sexuate si asexuate. Celulele asexuate se inmultesc prin diviziune, rezultind doua celule flaminde.
+
+Cele sexuate se inmultesc doar daca gasesc o alta celula ce cauta sa se reproduca iar atunci rezulta o a treia celula, initial infometata.
+
+In simulare, celulele vor fi reprezentate de fire de executie distincte.
